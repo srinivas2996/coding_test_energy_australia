@@ -54,7 +54,6 @@ def test_insert_and_fetch_sample_customers(database_connection):
     records = cursor.fetchall()
 
     assert len(records) == 5  # Assuming 5 sample customers were inserted
-    # Additional assertions based on the inserted sample records can be performed here
 
 
 def test_insert_records(database_connection):
