@@ -55,24 +55,20 @@ def compare_sql_table_to_csv(database_connection):
         string_columns = df.select_dtypes(include='object').columns
         df[string_columns] = df[string_columns].apply(lambda x: x.str.strip())
 
-    def replace_nan_with_none(df):
-        df.fillna(value=pd.NA, inplace=True)
-
     clean_string_columns(sql_df)
     clean_string_columns(csv_df)
-    replace_nan_with_none(csv_df)
 
     # Ensure data types match before comparison
     csv_df['income'] = csv_df['income'].astype(int)
 
     # Print the row counts for debugging
-    print("SQL DataFrame row count:", len(sql_df))
-    print("CSV DataFrame row count:", len(csv_df))
+    #print("SQL DataFrame row count:", len(sql_df))
+    #print("CSV DataFrame row count:", len(csv_df))
 
     # Print the unique values of a primary key or unique identifier column
     primary_key_column = "customerid"  # Replace with your actual primary key column name
-    print("Unique values in SQL DataFrame:", sql_df[primary_key_column].nunique())
-    print("Unique values in CSV DataFrame:", csv_df[primary_key_column].nunique())
+    #print("Unique values in SQL DataFrame:", sql_df[primary_key_column].nunique())
+    #print("Unique values in CSV DataFrame:", csv_df[primary_key_column].nunique())
 
     # Compare the number of rows in both dataframes
     assert len(sql_df) == len(csv_df), f"Row count mismatch. SQL: {len(sql_df)}, CSV: {len(csv_df)}"
