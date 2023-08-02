@@ -6,10 +6,10 @@ This Python script is designed to perform data comparison between a SQL table an
 
 Before running the script, you need to make sure the following dependencies are installed:
 
-- Python (version X.X.X)
-- pytest (version X.X.X)
-- pandas (version X.X.X)
-- PostgreSQL (version X.X.X) or any compatible database with the 'customers' table.
+- Python (version 3.11.4)
+- pytest (version 7.4.0)
+- pandas (version 2.0.3)
+- PostgreSQL(psycopg2) (version 2.9.6) or any compatible database with the 'customers' table.
 
 ## Setup
 
