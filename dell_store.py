@@ -1,8 +1,7 @@
 from db_connection import get_connection
 import psycopg2
 
-# dell_store.py
-# dell_store.py
+
 def insert_sample_customers():
     connection = get_connection()
     if connection:
