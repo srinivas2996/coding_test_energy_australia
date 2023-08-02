@@ -28,7 +28,7 @@ def fetch_data_from_sql_table(connection, table_name):
 def read_data_from_csv(csv_file):
     try:
         # Read data from the CSV file and convert it into a pandas dataframe
-        df = pd.read_csv(r"C:\Users\User\Documents\cust-test.csv")
+        df = pd.read_csv(r"csv-path")
 
         # Clean the data by stripping whitespaces from string columns
         string_columns = df.select_dtypes(include='object').columns
