@@ -1,5 +1,3 @@
-# db_connection.py
-
 import psycopg2
 
 def get_connection():
