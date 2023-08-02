@@ -36,5 +36,3 @@ To run the code in this repository, you will need the following:
 ## Note
 
 Ensure that you have set up the PostgreSQL database and configured the connection details correctly in 'db_connection.py' before running the test cases. The tests may fail if the database is not accessible or the sample customers are not inserted correctly.
-
-For further details or questions, please contact [your-email@example.com](mailto:your-email@example.com).
