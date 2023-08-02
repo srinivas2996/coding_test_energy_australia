@@ -39,19 +39,16 @@ def read_data_from_csv(csv_file):
         print("Error: ", e)
         return None
 
-
-# ... (Other functions as before) ...
-
 # test_data_comparison.py
 
 def compare_sql_table_to_csv(database_connection):
     def compare_sql_table_to_csv(database_connection):
         # Fetch data from the SQL table and convert it to a dataframe
-        sql_table_name = "customers"  # Replace with your actual SQL table name
+        sql_table_name = "customers" 
         sql_df = fetch_data_from_sql_table(database_connection, sql_table_name)
 
         # Read data from the CSV file and convert it to a dataframe
-        csv_file_path = r"C:\Users\User\Downloads\cust-test.csv"  # Replace with your actual CSV file path
+        csv_file_path = r"C:\Users\User\Downloads\cust-test.csv" 
         csv_df = read_data_from_csv(csv_file_path)
 
         # Ensure data types match before comparison
@@ -81,8 +78,7 @@ def compare_sql_table_to_csv(database_connection):
                 assert False, f"Data mismatch in column '{column_name}'."
 
         # Compare primary key or unique identifier column
-        assert sql_df[primary_key_column].equals(csv_df[primary_key_column]), "Primary key column mismatch."
-
+        assert sql_df[primary_key_column].equals(csv_df[primary_key_column]), 
         # If all assertions pass, the data comparison is successful
         print("Data comparison successful!")
 
