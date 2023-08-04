@@ -18,7 +18,7 @@ pip install pytest great_expectations
 
 1. **Setup your data source:**
 
-   Update the `data_batch()` fixture in `test_expectations.py` to load your CSV file as a batch. Make sure to replace `"C:\Users\User\Documents\cust-test.csv"` with the actual path to your CSV file.
+   Update the `data_batch()` fixture in `test_expectations.py` to load your CSV file as a batch. Make sure to replace `"/path/to/your/csv/file.csv"` with the actual path to your CSV file.
 
    ```python
    # test_expectations.py
