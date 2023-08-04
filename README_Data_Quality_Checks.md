@@ -1,4 +1,3 @@
-```markdown
 # Great Expectations Test Suite
 
 This repository contains pytest test functions to validate data quality using Great Expectations for the CSV file `cust-test.csv`.
