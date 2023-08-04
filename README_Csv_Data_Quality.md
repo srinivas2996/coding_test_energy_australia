@@ -88,5 +88,3 @@ If you find any issues or have suggestions for improvements, please feel free to
 Special thanks to the Great Expectations team for providing this powerful tool for data validation.
 
 ---
-
-Please replace `/path/to/your/csv/file.csv` with the actual path of your CSV file. The `README.md` provides clear instructions on the requirements, how to set up the data source, define expectations, and run the tests.
