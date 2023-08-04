@@ -1,5 +1,3 @@
-Sure, here's an example of how the `readme.md` file could be created to provide some context and instructions for running the tests:
-
 ```markdown
 # Great Expectations Test Suite
 
