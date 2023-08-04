@@ -1,6 +1,6 @@
 Sure, let's update the `README.md` starting from the "Requirements" section:
 
-# Great Expectations Project Readme
+# Data Quality Checks Readme
 
 ## Requirements
 
